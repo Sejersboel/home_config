@@ -1,9 +1,10 @@
 Home_config
+===========
 
-** Vim **
-  - .vimrc
-  - .vim/
+## Vim
+- .vimrc
+- .vim/
 
-** Bash **
-  - .bashrc
-  - .bash_aliases
+## Bash
+- .bashrc
+- .bash_aliases
