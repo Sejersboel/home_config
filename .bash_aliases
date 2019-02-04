@@ -1,0 +1,6 @@
+alias project="cd ~/Dropbox/dm550-project/project-pt3/project/"
+alias report="cd ~/Dropbox/dm550-project/project-pt3/report/"
+alias osbuddy="java -jar .OSBuddy/OSBuddy.jar"
+alias uni="cd ~/Dropbox/UNI/"
+alias dm507="cd ~/Dropbox/UNI/dm507"
+alias dm563="cd ~/Dropbox/UNI/dm563"

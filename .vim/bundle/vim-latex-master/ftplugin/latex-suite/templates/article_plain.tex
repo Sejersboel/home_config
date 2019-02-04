@@ -1,0 +1,38 @@
+<+	+>	!comp!	!exe!
+%        File: !comp!expand("%:p:t")!comp!
+%     Created: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+% Last Change: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+%
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
+\usepackage[margin=20mm]{geometry}
+
+\usepackage{float}
+\usepackage{lastpage}
+\usepackage{minted}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\usepackage{multicol}
+\usepackage[pdftex, pdfpagemode={UseOutlines}, bookmarks,colorlinks, linkcolor={blue}, plainpages=false,  pdfpagelabels,  citecolor={red}, breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Hagbard F. S. Jensen}
+\rhead{\today}
+\lfoot{Syddansk Universitet/University of Southern Denmark}
+\rfoot{\thepage\  of \pageref{LastPage}}
+
+
+%\preto\subsection{\filbreak}
+
+\definecolor{bg}{rgb}{0.85,0.85,0.85} %Background colour for minted
+
+\begin{document}
+<++>
+\end{document}
