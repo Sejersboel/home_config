@@ -1,0 +1,20 @@
+<+	+>	!comp!	!exe!
+%        File: !comp!expand("%:p:t")!comp!
+%     Created: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+% Last Change: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+%
+\begin{tikzpicture}[level 1/.style={sibling distance=50mm},
+level 2/.style={sibling distance=25mm},
+level 3/.style={sibling distance=12.5mm},
+level 4/.style={sibling distance=6.25mm},
+grow=down,>=triangle 45]
+\node {$<+root+>$}
+child
+{
+node{$<+left+>$}
+}
+child
+{
+node{$<+right+>$}
+};
+\end{tikzpicture}
