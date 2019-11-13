@@ -21,6 +21,23 @@ set softtabstop=2
 set expandtab
 set noshiftround
 
+nnoremap <F11> :call ToggleExpandTab()<CR>
+function! ToggleExpandTab()
+  if &expandtab
+    set shiftwidth=8
+    set softtabstop=0
+    set tabstop=8
+    set noexpandtab
+    echo "Tabs are not expanded"
+  else 
+    set shiftwidth=2
+    set softtabstop=2
+    set tabstop=2
+    set expandtab
+    echo "Tabs are expanded"
+  endif
+endfunction
+
 "" Cursor
 set backspace=indent,eol,start
 nnoremap j gj
@@ -57,3 +74,4 @@ function! ToggleSpell()
     echo "Spelling is off"
   endif
 endfunction
+
