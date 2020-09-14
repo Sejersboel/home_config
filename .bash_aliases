@@ -1,6 +1,5 @@
 alias project="cd ~/Dropbox/dm550-project/project-pt3/project/"
 alias report="cd ~/Dropbox/dm550-project/project-pt3/report/"
-alias osbuddy="java -jar ~/.OSBuddy/OSBuddy.jar"
 alias uni="cd ~/Documents/uni/"
 alias dm507="cd ~/Documents/uni/dm507"
 alias dm563="cd ~/Documents/uni/dm563"

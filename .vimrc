@@ -3,8 +3,10 @@ execute pathogen#infect()
 syntax on
 filetype indent plugin on
 let g:tex_flavor='latex'
+
 "" line numbers
 set number
+set relativenumber
 
 "" File stats
 set ruler
@@ -60,9 +62,8 @@ set foldnestmax=10
 set foldlevel=1
 
 "" spelling
-set spell spelllang=en_gb
+set spell
 set spellsuggest=fast,20 "Don't show too much suggestion for spell check.
-set spellfile=~/Dropbox/Tool/Vim_Spell_add/en.utf-8.add"
 
 nnoremap <F12> :call ToggleSpell()<CR>
 function! ToggleSpell()
@@ -75,3 +76,27 @@ function! ToggleSpell()
   endif
 endfunction
 
+nnoremap <F9> :call ToggleDictionary()<CR>
+function! ToggleDictionary()
+  if &spelllang=='en_gb'
+    set spelllang=da
+    set spellfile=~/.vim/da.utf-8.add
+    echo "Spellcheck Danish"
+  else
+    set spelllang=en_gb
+    set spellfile=~/.vim/en.utf-8.add
+    echo "Spellcheck English"
+  endif
+endfunction
+
+"" Vim-Plug
+call plug#begin('~/.vim/plugged')
+
+" vim-repeat
+Plug 'https://tpope.io/vim/repeat.git'
+
+
+" vim-indent-object
+Plug 'michaeljsmith/vim-indent-object'
+
+call plug#end()
