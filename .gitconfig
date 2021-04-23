@@ -9,3 +9,4 @@ lg = !"git lg1"
 
 [core]
 	editor = vim
+	autocrlf = input

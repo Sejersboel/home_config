@@ -1,4 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/hagbard/development/javatest/LoginFormTest/src'
-let g:netrw_dirhist_2='/home/hagbard/.vim/bundle/vim-latex-master/ftplugin/latex-suite/templates'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/hagbard/Documents/ansoegning/elgiganten-support2'
+let g:netrw_dirhist_2='/home/hagbard/Documents'
+let g:netrw_dirhist_3='/home/hagbard/Documents/lol'
+let g:netrw_dirhist_4='/home/hagbard/Documents'
+let g:netrw_dirhist_5='/home/hagbard/Documents/ansoegning/elgiganten-support2'
+let g:netrw_dirhist_6='/home/hagbard/Documents'
+let g:netrw_dirhist_7='/home/hagbard'
+let g:netrw_dirhist_8='/home/hagbard/Documents'
+let g:netrw_dirhist_9='/home/hagbard/Documents/tips'
